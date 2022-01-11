@@ -1,0 +1,41 @@
+#include<iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+class student{
+    public:
+    int hrs,min,sec;
+    
+    student(int &n, int &m, int &o)
+
+    {     hrs=n;
+
+         min=m;
+        sec=o;
+
+}
+    void printinfo()
+    {
+        cout<<"the time is = "<<hrs<<min<<sec<<endl;
+        
+        cout<<"Time in total secounds is: "<<(hrs*3600)+(min*60)+sec<<endl;
+         
+    }
+};
+
+int main()
+{
+    int n,m,o;
+    cout<<"Hours?";
+    cin>>n;
+    cout<<"Minutes? ";
+    cin>>m;
+    cout<<"second? ";
+    cin>>o;
+
+    student a(n,m,o);
+    
+    a.printinfo();
+
+    return 0;
+}
